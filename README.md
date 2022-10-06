@@ -1,4 +1,5 @@
 # PagePersonal
-Sitio web sobre mí.
+Sitio web personal.
+https://www.develofer.somee.com/ 
 
-https://www.develofer.somee.com/
+--ESPAÑOL--TECNOOGÍAS USADAS: HTML, CSS, BOOTSTRAP, C#, ASP.NET (RESPONSIVE DESIGN)
