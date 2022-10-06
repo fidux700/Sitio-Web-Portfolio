@@ -1,0 +1,563 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+}
+
+
+
+body {
+    font-family: 'PT Serif', serif;
+    background-image: url('foto7.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contenedor-header {
+    /*background-image: url(foto10.png);*/
+    background-color: #2c040e9f;
+    box-shadow: 0 0 30px 0 brown;
+    /*box-shadow:0 0 20px 0 #ffffff38;*/
+
+    background-size: cover;
+    background-attachment: scroll;
+    animation: aparicion 7s normal;
+}
+
+
+
+
+@keyframes aparicion{
+    
+    0%{opacity:0;}
+    50%{opacity:0.5;}
+    100%{opacity:1;}
+    
+}
+
+.contenedor-presentacion {
+    animation: animacionFotoPerfil 10s infinite;
+    border-left: 3px solid gold;
+    border-bottom: 1px solid darkorange;
+    border-radius: 15px 15px;
+}
+
+
+
+
+
+
+.img-perfil-mio {
+    width: 250px;
+    height: 350px;
+    margin-left: 40px;
+}
+
+
+
+
+.contenedor-presentacion-foto {
+    animation: animacionFotoPerfil 10s infinite;
+    border-right: 3px solid gold;
+    border-top: 1px solid darkorange;
+    border-radius: 15px 15px;
+}
+
+@keyframes animacionFotoPerfil {
+
+    0% {
+        opacity: 0.2;
+        
+    }
+
+    25% {
+        opacity: 0.6;
+        /*box-shadow: 0 0 5px 0 darkorange;*/
+        /*background-color: #0000009f;*/
+    }
+
+    50% {
+        opacity: 1;
+        /*box-shadow: 0 0 10px 0 darkorange;*/
+        /*background-color: #0000006e;*/
+    }
+
+    75% {
+        opacity: 0.6;
+        /*box-shadow: 0 0 5px 0 darkorange;*/
+        /*background-color: #00000040;*/
+    }
+
+    100% {
+        opacity: 0.2;
+    }
+        
+}
+
+
+
+.H2Footer{
+    color:#ffff;
+    font-size:1.5rem;
+}
+
+.SpanFooter {
+    color: gold;
+}
+
+
+.contenedor-footer {
+    border-top: 1px solid #ffff;
+    margin-top:50px;
+
+}
+
+.contenedor {
+    background-color: #00000094;
+    /*box-shadow: 0 0 4px 0 yellow;*/
+    animation: aparicioncontenedor 7s normal;
+}
+
+@keyframes aparicioncontenedor {
+
+    0% {
+        opacity: 0; 
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+.navbar {
+    text-align: center;
+}
+
+.navbar-toggler-icon{
+    background-color:black;
+}
+
+
+
+
+    .lista li {
+        list-style: none;
+    }
+        .lista li a {
+            position: relative;
+            display: block;
+            text-transform: uppercase;
+            margin: 20px 0;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 600;
+            transition: 0.5s;
+            z-index: 1;
+        }
+
+            .lista li a:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-top: 2px solid #c34010;
+                border-bottom: 2px solid #c34010;
+                transform: scaleY(2);
+                opacity: 0;
+                transition: 0.3s;
+            }
+
+            .lista li a:after {
+                content: "";
+                position: absolute;
+                top: 2px;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #2c040e9f;
+                transform: scale(0);
+                opacity: 0;
+                transition: 0.3s;
+                z-index: -1;
+            }
+
+            .lista li a:hover {
+                color: gold;
+            }
+
+                .lista li a:hover:before {
+                    transform: scaleY(1);
+                    opacity: 1;
+                }
+
+                .lista li a:hover:after {
+                    transform: scaleY(1);
+                    opacity: 1;
+                }
+
+
+.fila{
+    border:double;
+}
+
+.Elemento1H2 {
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 20px 20px;
+}
+
+
+
+
+    .Elemento1H2::after {
+        content: " ";
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        top: -1px;
+        left: -1px;
+        border-top: 3.1px solid darkorange;
+        border-left: 3.1px solid darkorange;
+        transition: all 1s;
+    }
+
+    .Elemento1H2::before {
+        content: " ";
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        transition: all 1s;
+        bottom: -1px;
+        right: -1px;
+        border-bottom: 3.1px solid darkorange;
+        border-right: 3.1px solid darkorange;
+    }
+
+    .Elemento1H2:hover {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+        .Elemento1H2:hover::after, .Elemento1H2:hover::before {
+            width: 100%;
+            height: 100%;
+        }
+
+
+
+.accordion-item {
+    /*background-color: #e8c5b7;*/
+    border-radius: 10px 10px;
+    border:none;
+}
+
+   
+
+.accordion-body {
+    box-shadow: 2px 2px 20px 0 brown;
+    background-color: #ffd70016;
+   
+}
+
+
+
+
+
+.contenedorProyectos * {
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -ms-transition: all 0.7s;
+    transition: all 0.7s;
+}
+
+.contenedorProyectos {
+    /*background-color: #2c040e9f;*/
+    background-size: cover;
+    background-attachment:fixed;
+    border-radius: 20px 20px;
+
+}
+
+
+.ImagenDeFondo {
+    display: table-cell;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px 20px;
+    background-image: url(pregunta3.svg);
+    background-size: cover;
+    background-position: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    /*box-shadow: 0 0 20px 0 red;*/
+    box-shadow: 0 0 30px 0 brown;
+    background-color: #2c040e9f;
+}
+
+
+
+
+.ImagenSombra {
+    background-color: #e83e0d14;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
+
+
+
+
+
+
+.ImagenDeFondo:hover{
+    background-color:#a83939;
+    background-image:none;
+}
+
+.ImagenDeFondo .TituloImagen {
+    position: absolute;
+    text-transform: uppercase;
+    padding: 7px;
+    z-index: 1000;
+    top: 70%;
+    left: -80%;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 0.9rem;
+    width: 80%;
+    opacity: 0.9;
+    border-radius: 10px 10px;
+    border: solid 0.5px darkorange;
+}
+
+.ImagenDeFondo:hover .TituloImagen {
+    background-color: #163636;
+    left: 0px;
+}
+
+.ImagenDeFondo:hover .DescripImagen2 {
+    background-color: #000000;
+    top: 0px;
+}
+
+
+
+    .ImagenDeFondo .DescripImagen {
+        position: absolute;
+        padding: 5px;
+        z-index: 1000;
+        top: 77%;
+        right: -85%;
+        margin-top: 25px;
+        color: #ffffff;
+        font-weight: 300;
+        font-size: 0.9rem;
+        width: 80%;
+        opacity: 0.9;
+        border-radius: 10px 10px;
+        border: solid 0.5px #ffff;
+        font-style: italic;
+    }
+
+.ImagenDeFondo .DescripImagen2 {
+    position: absolute;
+    padding: 5px;
+    z-index: -1000;
+    top: -85%;
+    bottom: 0%;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 1rem;
+    width: 100%;
+    border-radius: 10px 10px;
+}
+
+    .ImagenDeFondo:hover .DescripImagen {
+        background-color: #163636;
+        right: 0px;
+    }
+
+.TituloImagen .Enlaceproyecto {
+    text-decoration: none;
+    color: gold;
+    font-size:14px;
+    border-bottom: solid 1px;
+    border-top: solid 1px;
+}
+
+.Enlaceproyecto:hover {
+    font-size: 1rem;
+    color:yellow;
+    transition:all 0.5s
+}
+
+.slider-container {
+    position: relative;
+    width: 140px;
+    height: 140px;
+}
+
+.position {
+    position: absolute;
+    width: 180px;
+    height: 250px;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    animation: animate 30s infinite;
+}
+
+
+
+@keyframes animate{
+
+    0% {
+        background-image: url(Iconos/htmlnew.png);
+        background-size: cover;
+    }
+
+    17.5% {
+        background-image: url(Iconos/css3new.png);
+        background-size: cover;
+    }
+    23% {
+        background-image: url(Iconos/sass.png);
+        background-size: cover;
+    }
+    37.5% {
+        background-image: url(Iconos/BootstrapIconod.png);
+        background-size: cover;
+    }
+    48% {
+        background-image: url(Iconos/figmaa.png);
+        background-size: cover;
+    }
+    60% {
+        background-image: url('Iconos/csharp.png');
+        background-size: cover;
+    }
+    80% {
+        background-image: url(Iconos/netcorenew.png);
+        background-size: cover;
+    }
+    100% {
+        background-image: url(Iconos/sql.png);
+        background-size: cover;
+    }
+
+}
+
+.h2SobreMi{
+    color:#ffff;
+}
+
+.Flechita {
+    width: 70px;
+    height: 70px;
+    box-shadow: 6px 6px 20px 13px black;
+    border-radius: 50px 50px;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
+
+    .Flechita:hover {
+        box-shadow: 0px 0px 0px 0px darkorange;
+        width: 80px;
+        height: 80px;
+        transition: all 0.7s;
+    }
+
+
+.h2sub{
+    color:gold;
+}
+
+
+.H2HOME{
+    color:#fff;
+    font-size:2rem;
+}
+
+.SOYHOME{
+    color:darkorange;
+    font-size:1.5rem;
+}
+
+.H1HOME {
+    color: darkorange;
+    font-size: 2.5rem;
+}
+
+.H3HOME {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.Bienvenida {
+    color: palegoldenrod;
+    font-size: 1.5rem;
+}
+
+.H1GRACIAS {
+    color: #fff;
+    font-size: 3rem;
+}
+
+.PGracias {
+    color: palegoldenrod;
+    font-size: 1.5rem;
+}
+
+.enlaceVolver a {
+    text-decoration: none;
+    color: #ffff;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid gold;
+    border-top: 1px solid gold;
+    color: gold;
+}
+
+    .enlaceVolver a:hover {
+        color: brown;
+        transition: all 0.4s;
+        border-bottom: 1px solid white;
+        border-top: 1px solid white;
+    }
+
+
+
+
+.form-label{
+    color:palegoldenrod;
+}
+
+.boton-enviar {
+    margin-top: 20px;
+    box-shadow: 0 0 10px 0 black;
+}
+
+.boton-enviar:hover {
+    box-shadow:0 0 20px 2px brown;
+    border:solid 0.5px #0000006c;
+}
+
+

@@ -1,0 +1,47 @@
+﻿@model PortfolioPersonal.Models.Mensaje
+@{
+
+	ViewData["Title"] = "Contacto";
+
+	
+
+}
+
+
+<header>
+        <div class="container-fluid contenedor d-flex justify-content-center " >
+        <nav class="navbar">
+            <ul class="lista">
+                <li class="m-1"><a asp-controller="Home" asp-action="Index">VOLVER A PAGINA DE PRESENTACION</a></li>
+            </ul>
+        </nav>
+</div>
+</header>
+
+<div class="container-fluid">
+<h1 class="mb-4 mt-5 h2sub">Formulario de contacto</h1>
+<form action="https://formsubmit.co/e5a57204a2b208e29cd20667fa481f7d" method="post">
+
+	<div class="mb-3">
+		<label asp-for="Nombre"  class="form-label">Nombre</label>
+		<input  asp-for="Nombre" class="form-control" id="Nombre" name="Nombre" placeholder="Ingrese el nombre completo"/>
+		<span asp-validation-for="Nombre"  class="text-warning" ></span>
+		<br />
+	</div>
+	<div class="mb-3">
+		<label asp-for="Email" class="form-label">Email</label>
+		<input  asp-for="Email" class="form-control" id="Email" name="Email" placeholder="email@hotmail.com"/>
+		<span asp-validation-for="Email" class="text-warning"></span>
+		<br />
+	</div>
+	<div class="mb-3">
+		<label asp-for="TuMensaje" class="form-label">Tu mensaje</label>
+		<textarea asp-for="TuMensaje" class="form-control " id="TuMensaje" name="TuMensaje" rows="4"></textarea>
+		<span asp-validation-for="TuMensaje" class="text-warning"></span>
+		<br />
+		<button type="submit" class="btn btn-dark boton-enviar" >ENVIAR</button>
+	</div>
+</form> 
+</div>
+
+
